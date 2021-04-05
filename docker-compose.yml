@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+
+  jira:
+    build: ./.docker
+    environment:
+      - JVM_SUPPORT_RECOMMENDED_ARGS=-Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dquickreload.dirs=/plugin
+    ports:
+      - 5005:5005
+      - 8080:8080
+    volumes:
+      - "./target:/plugin"
+
+  postgres:
+    image: postgres:9.6
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=jira
+      - POSTGRES_PASSWORD=jira
+      - POSTGRES_DB=jira
+      - LANG=C
+        
