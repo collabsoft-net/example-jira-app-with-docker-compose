@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mkdir -p /var/atlassian/application-data/jira/plugins/installed-plugins
 cp /opt/dbconfig.xml /var/atlassian/application-data/jira/dbconfig.xml
