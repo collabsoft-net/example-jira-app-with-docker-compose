@@ -49,3 +49,17 @@ In addition, you can check the Atlassian Jira application log by running
 ```
 docker-compose exec jira tail -f -n 5000 /var/atlassian/application-data/jira/log/atlassian-jira.log
 ```
+
+## Troubleshooting
+
+If docker compose fails with:
+
+```
+ERROR [internal] load metadata for docker.io/atlassian/jira-software
+```
+
+pull Atlassian docker image and retry
+
+```
+docker pull atlassian/jira-software
+```
