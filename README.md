@@ -40,6 +40,11 @@ atlas-mvn package
 
 This will create a new JAR file in `./target` which will be picked up by QuickReload and installed in your Jira instance.
 
+## I want the latest & greatest version of QuickReload
+
+You can download the latest copy of QuickReload JAR to be included in the Docker file from the Atlassian public maven repository:
+https://packages.atlassian.com/artifactory/maven-atlassian-external/com/atlassian/labs/plugins/quickreload/
+
 ## Debugging your app
 
 The Jira instance is started with JVM debugging enabled. You can connect your IDE to remote debugging on port 5005
