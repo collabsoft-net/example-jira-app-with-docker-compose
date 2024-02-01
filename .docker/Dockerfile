@@ -1,4 +1,4 @@
-FROM atlassian/jira-software:latest
+FROM atlassian-jira
 
 RUN apt-get clean -y && apt-get update -y && apt-get install postgresql-client -y;
 
