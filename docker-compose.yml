@@ -10,7 +10,7 @@ services:
       - 5005:5005
       - 8080:8080
     volumes:
-      - "./target:/plugin"
+      - "./target/quickreload:/plugin"
 
   postgres:
     image: postgres:9.6
@@ -21,4 +21,3 @@ services:
       - POSTGRES_PASSWORD=jira
       - POSTGRES_DB=jira
       - LANG=C
-        
