@@ -6,6 +6,9 @@ when developing P2 apps for Server/Data Center.
 
 The code base includes an example app created using `atlas-create-jira-plugin`.
 
+> [!NOTE]  
+> To run this on Apple Silicon, please refer to the [AppleSilicon](https://github.com/collabsoft-net/example-jira-app-with-docker-compose/tree/AppleSilicon) branch 
+
 ## Quick demo
 
 If you want to take it for a quick spin, clone this repository and run `docker-compose up`.
