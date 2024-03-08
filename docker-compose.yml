@@ -13,7 +13,7 @@ services:
       - "./target/quickreload:/plugin"
 
   postgres:
-    image: postgres:9.6
+    image: postgres:10.23-alpine
     ports:
       - 5432:5432
     environment:
